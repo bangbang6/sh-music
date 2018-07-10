@@ -170,12 +170,42 @@
                     })
                 }
             })
+            var mysongss=[]
             var email= localStorage.getItem('email');
                var password= localStorage.getItem('password');
+               //获取歌单列表
+               var mysongss = [];
+               if (email !== null && password !== null) {
+           		$.ajax({
+           			url : 'User_getMusic',
+           			data : {
+           				email : email,
+           				password : password
+           			},
+           			type : 'post',
+           			dataType : "json",
+           			contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+           			success : function(data) {
+           				console.log(data)
+           				 mysongss = data
+           			}
+           		})
+               }
             //加入歌单
-            $("#add").click(function () {
-              console.log(email)
-                $.ajax({
+            
+           function addMusic(){
+        	  $("#add").click(function (e) {
+        		  console.log(e);
+        		  console.log(mysongss)
+        		  if(localStorage.getItem('HaveLogin') ==='true'){  
+        			  for(var i=0;i<mysongss.length;i++){
+        				  if(mysongss[i].musicUrl === url){
+        					  alert("已经添加过歌曲!")
+        					  return ;
+        				  }
+        			  }
+                    console.log(email)
+                    $.ajax({
                     url: 'User_addMusic',
                     type: 'post',
                     data: { author: author, title: title, picUrl: picurl, musicUrl: url, lyricUrl: lrcurl,email:email,password:password },
@@ -192,7 +222,12 @@
                         }
                     }
                 })
+        		  }else{
+        			  alert("请先登录!")
+        		  }
             })
+           }
+           addMusic();
             //评论区
             
             function getComments(){
