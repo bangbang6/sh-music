@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018??7??7?? ????11:10:55 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.Music" table="MUSIC">
+        <id name="musicUrl" type="java.lang.String">
+            <column name="MUSICURL" />
+            <generator class="assigned" />
+        </id>
+        <property name="author" type="java.lang.String">
+            <column name="AUTHOR" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="picUrl" type="java.lang.String">
+            <column name="PICURL" />
+        </property>
+        <property name="lyricUrl" type="java.lang.String">
+            <column name="LYRICURL" />
+        </property>
+        <property name="times" type="long">
+            <column name="TIMES" />
+        </property>
+        <list name="comments" table="MUSIC_COMMENTS">
+            <key column="music_sid"></key>
+            <list-index></list-index>
+            <element type="java.lang.String">
+                <column name="COMMENTS" />
+            </element>
+        </list>
+        <set name="userList" table="umu" inverse="true" lazy="false">
+            <key column="rmuid"></key>
+            <many-to-many class="beans.Music" column="ruid" />
+        </set>
+    </class>
+</hibernate-mapping>

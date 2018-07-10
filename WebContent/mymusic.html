@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="staticCss/font-awesome.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+    
+    <style>
+        .title {
+            display: flex;
+            width: 80%;
+            height: 100px;
+            margin: auto;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(201, 185, 185);
+            min-width: 1300px;
+            overflow: hidden;
+        }
+
+        .mname {
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 28px;
+            float: left;
+        }
+          .namen{
+          cursor:pointer;
+          }
+          .namen:hover{
+          color:#31c27c}
+        .nav a {
+            float: left;
+            color: black;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .begin {
+            float: left;
+            display: flex;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        .music {
+            float: left;
+            margin-left: 100px;
+            margin-top: 35px;
+            position: relative;
+        }
+
+        .active {
+            position: relative;
+        }
+
+        .active:after {
+            display: block;
+            content: "";
+            border-width: 6px 6px 6px 6px;
+            border-color: transparent transparent black transparent;
+            ;
+            border-style: solid;
+            position: absolute;
+            left: 40%;
+            top: 100%;
+        }
+
+        a:hover {
+            color: rgb(143, 223, 143);
+        }
+        .main{
+            position: relative;
+            width: 100%;
+            height:600px;
+        }
+        .not{
+            position: absolute; 
+            left:45%;
+            top:50%;
+            font-size: 25px;
+        }
+        .my{
+           margin-left: 130px;
+           font-size: 20px;
+           margin-top:20px;
+        }
+        .items{
+            display: flex;
+            margin-left:130px;
+           
+        }
+        .head{
+        margin-top:30px;
+        margin-left:130px;
+        display:inline-block;
+        
+        }
+        .head tr{
+        height:40px;}
+        .head tr:nth-child(odd){
+         height:40px;
+         background-color:#fbfbfd;
+        }
+        .head tr td{
+        height:40px;
+        width:600px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <p class="mname">RK音乐</p>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#" id="lib">音乐馆</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="list">我的歌单</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="up">上传歌曲</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">VIP</a>
+            </li>
+        </ul>
+        
+
+
+    </div>
+    <div class="main">
+           <img src="1.jpg" alt="背景图" class='pic'>
+           <div class='my'>我的歌单</div>
+           <div class="musics">
+
+           </div>
+    </div>
+
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="js/mymusic.js"></script>
+</body>

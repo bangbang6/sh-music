@@ -1,0 +1,300 @@
+
+
+.title {
+	display: flex;
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	font-size: 20px;
+	border-bottom: 1px solid rgb(201, 185, 185);
+	min-width: 1300px;
+	overflow: hidden;
+}
+
+.mname {
+	font-size: 30px;
+	margin-left: 20px;
+	margin-top: 28px;
+	float: left;
+}
+
+.nav a {
+	float: left;
+	color: black;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.begin {
+	float: left;
+	display: flex;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+.music {
+	float: left;
+	margin-left: 100px;
+	margin-top: 35px;
+	position:relative;
+}
+
+#Register {
+	margin-left: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+#Login {
+	margin-left: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+a:hover {
+	color: rgb(143, 223, 143);
+}
+
+#aregister:hover {
+	color: rgb(143, 223, 143);
+}
+
+#alogin:hover {
+	color: rgb(143, 223, 143);
+}
+
+.active {
+	position: relative;
+}
+
+.active:after {
+	display: block;
+	content: "";
+	border-width: 6px 6px 6px 6px;
+	border-color: transparent transparent black transparent;;
+	border-style: solid;
+	position: absolute;
+	left: 40%;
+	top: 100%;
+}
+
+.label {
+	margin-top: 3%;
+	width: 100%;
+	display: inline-block;
+	text-align: center
+}
+
+.hot {
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	letter-spacing: 10px;
+	font-size: 30px;
+}
+
+.main {
+	width: 80%;
+	margin: auto;
+}
+
+.songs {
+	height: 600px;
+	width: 100%;
+}
+
+.rangking {
+	height: 600px;
+}
+
+.row1, .row2, .list {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	width: 100%;
+	margin-left: 20px;
+}
+
+
+
+.rangking {
+	margin-top: 10%;
+}
+
+.list div {
+	margin-top: 10%;
+	width: 300px;
+	height: 500px;
+	border: 1px solid black;
+	margin-right: 40px;
+}
+
+.foot {
+	width: 100%;
+	display: inline-block;
+}
+
+#haveNum {
+	cursor: pointer;
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+}
+
+.help-block {
+	color: red;
+}
+
+.form-group {
+	position: relative;
+}
+
+.fa-search {
+	cursor: pointer;
+	position: absolute;
+	top: 43px;
+	right: 5px;
+}
+
+.row1, .row2 {
+	display: flex;
+}
+
+.name, .author {
+	font-size: 14px;
+}
+.big{
+	margin-top:60px;
+}
+.big {
+	margin-right:50px;
+}
+  .forteenth{
+        display: flex;
+        margin-left:60px;
+        color:white;
+        margin-top:80px;
+    }
+    .forteenth>div{
+        width:500px;
+        height:476px;
+        margin-right: 40px;
+    }
+    .first1{
+        background-color: #d0738e;
+    }
+    .second2{
+        background-color: #759ebb;
+    }
+    .third3{
+        background-color: #6ec1ba;
+    }
+    .forth4{
+        background-color: #518e93;
+    }
+    .fifth5{
+        background-color: #e19c6b;
+    }
+    .forteenth>div>p{
+        margin:0 auto;
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .forteenth>div>p>ol{
+       display: inline-block;
+       margin-top: 60px;
+    }
+    .big1{
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+     
+
+.footer a{
+    color:rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+}
+.footer p{
+    letter-spacing: 2px;
+}
+.footer{
+    width:100%;
+    height:200px;
+    margin-top:60px;
+     background: gray; 
+    position: relative;
+    color:white;
+}
+.footer>div{
+    position: absolute;
+    margin-top:10px;
+    font-size:16px;
+   
+}
+.footer .block1{
+    left:260px
+}
+.footer .block2{
+    left:480px;
+}
+.footer .block3{
+    left:720px;
+}
+.footer .block4{
+    left:980px;
+    display: flex;
+}
+.footer a {
+    color: rgba(255, 255, 255, 0.4)!important;
+}
+.footer div p{
+color:rgba(255, 255, 255, 0.4);
+}
+.footer div p:nth-child(1){
+    color: white;
+    font-size: 20px;
+}
+.footer .block4 p:nth-child(1){
+ font-size: 50px;
+}
+.footer .block4 p:nth-child(2){
+   margin-left:20px;
+   margin-top:33px;
+}
+.footer a:hover{
+    opacity: .5;
+    color:white;
+}
+.pic{
+    cursor: pointer;
+}
+.musicmodal{
+	color: black;
+	cursor: pointer;
+	overflow-y: auto;
+}
+.musicmodal:hover{
+	color:rgb(52, 216, 52)
+}
+.pic{
+	transition: all 0.6s;
+}
+.pic:hover{
+	transform: scale(1.1)
+}
+#mfirst,#msecond,#mthird,#mforth{
+	cursor:pointer
+}
+#mfirst:hover{
+	color:#31c27c
+}
+#msecond:hover{
+	color:#31c27c
+}
+#mthird:hover{
+	color:#31c27c
+}
+#mforth:hover{
+	color:#31c27c
+}

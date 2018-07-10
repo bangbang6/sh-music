@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018??7??7?? ????11:10:55 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="beans.User" table="USER">
+        <id name="email" type="java.lang.String">
+            <column name="EMAIL" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <set name="musicList" table="umu" cascade="all">
+            <key column="ruid"></key>
+            <many-to-many class="beans.Music" column="rmuid" />
+        </set>
+    </class>
+</hibernate-mapping>

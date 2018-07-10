@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="staticCss/font-awesome.min.css">
+    <style>
+    .main{
+        background-color: #373031;
+        width:100%;
+        height: 720px;
+        color:white;
+         min-width: 1300px;
+            overflow: hidden;
+        position: relative;
+    }
+    #title{
+        color:#5e6366;
+        font-size: 30px;
+        position: absolute;
+        left:20px;
+        top:0;
+    }
+    .lyric{
+        position: relative;
+        top:60px;
+       display: inline-block;
+      height:450px;
+      width:400px;
+      overflow: hidden;
+      text-align: center;
+        left:250px;
+    }
+    .right{
+        position: absolute;
+        right:400px;
+        top:100px;
+        text-align: center;
+    }
+    .words{
+        width:100%;
+        position: absolute;
+        bottom: 100px;
+        color:#5e6366;
+        height:100px;
+       margin-left:20%;
+    }
+    #message{
+        width:60%;
+        display: inline-block;
+        
+       height:100px;
+        
+        background-color:#5e6366;
+        color:white;
+    }
+    .name,.author{
+        width:100%;
+        margin: 0 auto;
+     
+    }
+   #mes{
+      font-size: 20px;
+      
+   }
+   #submit{
+       position: absolute;
+       left:834px;
+       font-size: 18px;
+   }
+   #submit a{
+       cursor: pointer;
+   }
+   a:hover{
+       color:white;
+   }
+   a:focus{
+       color:#373031;
+   }
+   li{
+       list-style: none;
+     
+       margin-top:10px;
+    }
+    #tishi{
+        position: absolute;
+        top:40%;
+        left:45%;
+        opacity: 0;
+        z-index:999;
+    }
+    #add{
+        cursor: pointer;
+    }
+    #add:hover{
+        color:#31c27c
+    }
+    #comment{
+        border:1px solid black;
+        width:100%;
+       
+    }
+    .mess{
+        margin-left:300px;
+    }
+    .comments{
+    height:100px;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    
+    }
+    #messa{
+     left:70px;
+     position:absolute;
+     bottom:20px;
+    }
+    .comments{
+    position:relative;
+    }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+         <p id="title">RK音乐</p>
+        <div class="song">
+            <div class="lyric" id="gc">
+                <ul></ul>
+           </div>
+           <div class="right">
+               <div> <img id="musicPic" alt="加载中"></div>
+              
+               <p id="name">歌曲名</p>
+               <p id="author">歌曲作者</p>
+               <audio id="music"></audio>
+               <p id="add">加入歌单</p>
+           </div>
+        </div> 
+
+        <div class="words">
+            <p id="mes">评论</p>
+           <div id="message" contentEditable="true"></div>
+        
+           <div id="submit"><a id="asubmit">提交评论</a></div>
+        </div>
+        <div id="tishi" class='fa fa-check fa-4x'></div>
+    </div>
+    <div id="comment">
+       <div class="mess">
+           <p>精彩评论</p>
+           <div class="com"></div>
+       </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

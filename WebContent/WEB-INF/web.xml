@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>kumusic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   
+  </welcome-file-list>
+  <filter>  
+    <!-- 配置Struts2核心控制器的名字 -->  
+    <filter-name>struts2</filter-name>  
+    <!-- 配置struts2核心控制器的实现类 -->  
+    <filter-class>  
+        org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter  
+    </filter-class>  
+  </filter>  
+    
+  <filter-mapping>  
+    <!-- 过滤器拦截去的名称 -->  
+    <filter-name>struts2</filter-name>  
+    <!-- 配置struts2核心过滤器拦截所有的用户请求 -->  
+    <url-pattern>/*</url-pattern>  
+  </filter-mapping>
+</web-app>
